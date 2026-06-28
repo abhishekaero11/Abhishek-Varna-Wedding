@@ -624,7 +624,9 @@
       letter-spacing: 0.2em; color: var(--gold-pale); text-transform: uppercase;
       margin-bottom: 0.45rem;
     }
-    .form-row input, .form-row select, .form-row textarea {
+    .form-row input:not([type="checkbox"]), 
+    .form-row select, 
+    .form-row textarea {
       width: 100%; padding: 0.7rem 0.9rem;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(201,146,42,0.3);
@@ -633,7 +635,9 @@
       outline: none; transition: border-color 0.3s;
       -webkit-appearance: none; appearance: none;
     }
-    .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+    .form-row input:not([type="checkbox"]):focus, 
+    .form-row select:focus, 
+    .form-row textarea:focus {
       border-color: var(--gold); background: rgba(255,255,255,0.08);
     }
     .form-row select option { background: var(--green-deep); color: var(--cream); }
@@ -962,7 +966,7 @@
         <!-- ── SEP 12 ── -->
         <div class="event-group">
           <div class="event-date-header">
-            <div class="event-date-pill">Friday · September 12, 2026</div>
+            <div class="event-date-pill">Saturday · September 12, 2026</div>
           </div>
 
           <div class="ev-row reveal">
@@ -976,7 +980,7 @@
                   <span>Rajaprastham Convention Centre<br/>Velladikunnu, Kerala</span>
                 </div>
               </div>
-              <a href="https://www.google.com/maps/place/Rajaprastham+Convention+Centre/@10.7525966,76.1640786,17z" target="_blank" class="ev-map-link">View on Maps ↗</a>
+              <a href="https://maps.app.goo.gl/arVwu261FZ2Pcyfk6" target="_blank" class="ev-map-link">View on Maps ↗</a>
             </div>
           </div>
         </div>
@@ -984,7 +988,7 @@
         <!-- ── SEP 13 ── -->
         <div class="event-group">
           <div class="event-date-header">
-            <div class="event-date-pill">Saturday · September 13, 2026</div>
+            <div class="event-date-pill">Sunday · September 13, 2026</div>
           </div>
 
           <div class="ev-row reveal">
@@ -995,10 +999,10 @@
               <div class="ev-meta">
                 <div class="ev-meta-item"><span class="ev-icon">🕗</span><span>8:00 AM</span></div>
                 <div class="ev-meta-item"><span class="ev-icon">📍</span>
-                  <span>Sri Krishna Temple<br/>Guruvayur, Kerala</span>
+                  <span>Sree Krishna Temple<br/>Guruvayur, Kerala</span>
                 </div>
               </div>
-              <a href="https://maps.google.com/?q=Guruvayur+Devaswom+Temple+Kerala" target="_blank" class="ev-map-link">View on Maps ↗</a>
+              <a href="https://maps.app.goo.gl/pH9ZvDLFVMNAdmjk9" target="_blank" class="ev-map-link">View on Maps ↗</a>
             </div>
           </div>
 
@@ -1013,7 +1017,7 @@
                   <span>Rajaprastham Convention Centre<br/>Velladikunnu, Kerala</span>
                 </div>
               </div>
-              <a href="https://www.google.com/maps/place/Rajaprastham+Convention+Centre/@10.7525966,76.1640786,17z" target="_blank" class="ev-map-link">View on Maps ↗</a>
+              <a href="https://maps.app.goo.gl/arVwu261FZ2Pcyfk6" target="_blank" class="ev-map-link">View on Maps ↗</a>
             </div>
           </div>
         </div>
@@ -1021,7 +1025,7 @@
         <!-- ── SEP 14 ── -->
         <div class="event-group">
           <div class="event-date-header">
-            <div class="event-date-pill">Sunday · September 14, 2026</div>
+            <div class="event-date-pill">Monday · September 14, 2026</div>
           </div>
 
           <div class="ev-row reveal">
@@ -1030,12 +1034,12 @@
               <div class="ev-name">Wedding Reception</div>
               <div class="ev-name-mal">വിവാഹ സ്വീകരണം</div>
               <div class="ev-meta">
-                <div class="ev-meta-item"><span class="ev-icon">🌟</span><span>Evening Reception</span></div>
+                <div class="ev-meta-item"><span class="ev-icon">🌟</span><span>6:30 PM onwards</span></div>
                 <div class="ev-meta-item"><span class="ev-icon">📍</span>
                   <span>Aadrika Hall<br/>Sree Annapoorna Hotel<br/>Coimbatore, Tamil Nadu</span>
                 </div>
               </div>
-              <a href="https://www.google.com/maps/place/Aadrika+hall,+Annapoorna/@11.065103,76.942624,17z" target="_blank" class="ev-map-link">View on Maps ↗</a>
+              <a href="https://maps.app.goo.gl/drZig1CLn1ATzx5G6" target="_blank" class="ev-map-link">View on Maps ↗</a>
             </div>
           </div>
         </div>
@@ -1053,25 +1057,29 @@
     </div>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <div class="gallery-placeholder"><div class="ph-icon">🌸</div><div class="ph-text">Featured Engagement Photo</div></div>
+          <img src="Engagement-1.JPG" alt="Engagement Photo 1">
       </div>
+      
       <div class="gallery-item">
-        <div class="gallery-placeholder"><div class="ph-icon">💛</div><div class="ph-text">Engagement Memory</div></div>
+          <img src="Engagement-2.JPG" alt="Engagement Photo 2">
       </div>
+      
       <div class="gallery-item">
-        <div class="gallery-placeholder"><div class="ph-icon">🌺</div><div class="ph-text">Engagement Memory</div></div>
+          <img src="Engagement-3.JPG" alt="Engagement Photo 3">
       </div>
+      
       <div class="gallery-item">
-        <div class="gallery-placeholder"><div class="ph-icon">✨</div><div class="ph-text">Engagement Memory</div></div>
+          <img src="Engagement-4.JPG" alt="Engagement Photo 4">
       </div>
+      
       <div class="gallery-item">
-        <div class="gallery-placeholder"><div class="ph-icon">💫</div><div class="ph-text">Engagement Memory</div></div>
+          <img src="Engagement-5.jpeg" alt="Engagement Photo 5">
       </div>
+      
       <div class="gallery-item">
-        <div class="gallery-placeholder"><div class="ph-icon">🌿</div><div class="ph-text">Engagement Memory</div></div>
+          <img src="Engagement-6.jpeg" alt="Engagement Photo 6">
       </div>
     </div>
-    <p class="gallery-hint">✦ Engagement photographs will be added here · ഫോട്ടോകൾ ഉടൻ ചേർക്കും ✦</p>
   </section>
 
   <!-- MAPS -->
@@ -1094,7 +1102,7 @@
         </iframe>
         <div class="map-card-footer">
           <div class="map-address">Rajaprastham Convention Centre,<br/>Velladikunnu, Kerala</div>
-          <a href="https://www.google.com/maps/place/Rajaprastham+Convention+Centre/@10.7525966,76.1640786,17z" target="_blank" class="map-btn">Open Maps ↗</a>
+          <a href="https://maps.app.goo.gl/arVwu261FZ2Pcyfk6" target="_blank" class="map-btn">Open Maps ↗</a>
         </div>
       </div>
 
@@ -1105,12 +1113,12 @@
         </div>
         <iframe
           class="map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.04!2d76.9400491!3d11.065103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7000434c7b3%3A0x9aea9bf347ba6db1!2sAadrika%20hall%2C%20Annapoorna!5e0!3m2!1sen!2sin!4v1716000000001"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6465639742387!2d76.94004907458877!3d11.065102989101721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7000434c7b3%3A0x9aea9bf347ba6db1!2sAadrika%20hall%2C%20Annapoorna!5e0!3m2!1sen!2sus!4v1782612733016!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <div class="map-card-footer">
           <div class="map-address">Aadrika Hall, Sree Annapoorna Hotel,<br/>Coimbatore, Tamil Nadu</div>
-          <a href="https://www.google.com/maps/place/Aadrika+hall,+Annapoorna/@11.065103,76.942624,17z" target="_blank" class="map-btn">Open Maps ↗</a>
+          <a href="https://maps.app.goo.gl/drZig1CLn1ATzx5G6" target="_blank" class="map-btn">Open Maps ↗</a>
         </div>
       </div>
     </div>
@@ -1125,7 +1133,7 @@
       <h2 class="section-title">RSVP</h2>
       <div class="section-title-mal">ദയവായി അറിയിക്കൂ</div>
       <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.98rem;color:var(--gold-pale);margin-top:0.4rem;opacity:0.8;">
-        Please let us know you're coming ·
+        Please let us know you're coming!
       </p>
     </div>
 
@@ -1143,11 +1151,11 @@
           <label>Number of Guests</label>
           <select id="rsvp-guests">
             <option value="">Select guests</option>
-            <option value="1">1 – Just me</option>
+            <option value="1 - Just Me">1 – Just me</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5+">5 or more</option>
+            <option value="5 or more">5 or more</option>
           </select>
         </div>
         <div class="form-row">
@@ -1170,20 +1178,20 @@
         <div class="form-row">
           <label>Will you be attending?</label>
           <div class="rsvp-attendance">
-            <button class="attendance-btn active" onclick="setAttendance(this,'yes')">✦ Joyfully Accept</button>
-            <button class="attendance-btn" onclick="setAttendance(this,'no')">Regretfully Decline</button>
+            <button type="button" class="attendance-btn active" onclick="setAttendance(this,'yes')">✦ Joyfully Accept</button>
+            <button type="button" class="attendance-btn" onclick="setAttendance(this,'no')">Regretfully Decline</button>
           </div>
         </div>
         <div class="form-row">
           <label>A Message for the Couple (optional)</label>
           <textarea id="rsvp-message" placeholder="Your blessings and wishes…"></textarea>
         </div>
-        <button class="rsvp-submit" onclick="submitRSVP()">Send with Love ✦</button>
+        <button type="button" class="rsvp-submit" onclick="submitRSVP()">Send with Love ✦</button>
       </div>
 
       <div class="rsvp-success" id="rsvp-success">
         <div class="si">🌸</div>
-        <p>
+        <p id="rsvp-success-message">
           Thank you, <strong id="rsvp-thanks-name" style="color:var(--gold-light);">dear friend</strong>!<br/>
           Your response has been received with joy.<br/>
           We cannot wait to celebrate with you.<br/><br/>
@@ -1277,11 +1285,84 @@
   }
   function submitRSVP() {
     const name = document.getElementById('rsvp-name').value.trim();
-    if (!name) { alert('Please enter your name.'); return; }
+    const phone = document.getElementById('rsvp-phone').value.trim();
+    const guests = document.getElementById('rsvp-guests').value;
+    const message = document.getElementById('rsvp-message').value.trim();
+  
+    const events = [];
+    if (document.getElementById('ev-sangeet').checked) events.push('Sangeet (Sep 12)');
+    if (document.getElementById('ev-thaali').checked) events.push('Thaali Kettu (Sep 13)');
+    if (document.getElementById('ev-wedding').checked) events.push('Wedding (Sep 13)');
+    if (document.getElementById('ev-reception').checked) events.push('Reception (Sep 14)');
+  
+    if (!name) {
+      alert('Please enter your name.');
+      return;
+    }
+  
+    if (attendanceVal === 'yes') {
+    
+      if (!phone) {
+        alert('Please enter your phone number.');
+        return;
+      }
+    
+      if (!guests) {
+        alert('Please select the number of guests.');
+        return;
+      }
+    
+      if (events.length === 0) {
+        alert('Please select at least one event you are attending.');
+        return;
+      }
+    
+    }
+  
+    const formData = new FormData();
+    formData.append('entry.160840673', name);
+    formData.append('entry.336588315', phone);
+    formData.append('entry.591600602', guests);
+  
+    events.forEach(eventName => {
+      formData.append('entry.1560968594', eventName);
+    });
+  
+    formData.append(
+      'entry.970973506',
+      attendanceVal === 'yes' ? 'Joyfully accept' : 'Regretfully decline'
+    );
+  
+    formData.append('entry.601035079', message);
+  
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSfOTfdyK83AVo520EEUsfCBKIlT9HWTIQq5UuAh-ILxEfWN6A/formResponse', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: formData
+    });
+  
     document.getElementById('rsvp-form').style.display = 'none';
+    
     const success = document.getElementById('rsvp-success');
+    const successMessage = document.getElementById('rsvp-success-message');
+    
+    if (attendanceVal === 'yes') {
+      successMessage.innerHTML = `
+        Thank you, <strong style="color:var(--gold-light);">${name}</strong>!<br/>
+        Your response has been received with joy.<br/>
+        We cannot wait to celebrate with you.<br/><br/>
+        <em style="font-size:0.85rem;">– Abhishek &amp; Varna</em>
+      `;
+    } else {
+      successMessage.innerHTML = `
+        Thank you, <strong style="color:var(--gold-light);">${name}</strong>!<br/>
+        Your response has been received.<br/>
+        Your blessings from afar mean so much to us.<br/><br/>
+        <em style="font-size:0.85rem;">– Abhishek &amp; Varna</em>
+      `;
+    }
+    
     success.style.display = 'block';
-    document.getElementById('rsvp-thanks-name').textContent = name;
   }
 
   /* keyboard shortcut on cover */
