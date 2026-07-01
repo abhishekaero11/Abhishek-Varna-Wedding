@@ -1081,7 +1081,7 @@
           <label style="margin-bottom:0.7rem;">Attending the event?</label>
           <div class="events-checkboxes">
             <label class="event-check-item">
-              <input type="checkbox" id="ev-wedding"/> <span>Wedding Ceremony (Sep 13)</span>
+              <input type="checkbox" id="ev-wedding"/> <span>Wedding (Sep 13)</span>
             </label>
           </div>
         </div>
@@ -1200,7 +1200,7 @@
     const message = document.getElementById('rsvp-message').value.trim();
   
     const events = [];
-    if (document.getElementById('ev-wedding').checked) events.push('Wedding Ceremony (Sep 13)');
+    if (document.getElementById('ev-wedding').checked) events.push('Wedding (Sep 13)');
   
     if (!name) {
       alert('Please enter your name.');
