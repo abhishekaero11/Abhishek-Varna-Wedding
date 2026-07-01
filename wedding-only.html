@@ -558,8 +558,8 @@
     #maps { background: var(--cream-dark); padding: 5rem 1.5rem; }
     .maps-header { text-align: center; margin-bottom: 2.5rem; }
     .maps-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 2rem; max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr;
+      gap: 2rem; max-width: 620px; margin: 0 auto;
     }
     .map-card { background: white; border: 1px solid rgba(139,97,26,0.2); overflow: hidden; }
     .map-card-header {
@@ -643,7 +643,7 @@
     .form-row select option { background: var(--green-deep); color: var(--cream); }
     .form-row textarea { min-height: 75px; resize: vertical; }
     .events-checkboxes {
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid; grid-template-columns: 1fr;
       gap: 0.5rem; margin-top: 0.5rem;
     }
     .event-check-item {
@@ -745,11 +745,6 @@
       .gallery-item:first-child { grid-column: span 1; aspect-ratio: 3/4; }
     }
 
-    /* maps — stack on mobile */
-    @media (max-width: 680px) {
-      .maps-grid { grid-template-columns: 1fr; }
-    }
-
     /* RSVP checkboxes — single column on tiny screens */
     @media (max-width: 420px) {
       .events-checkboxes { grid-template-columns: 1fr; }
@@ -795,8 +790,8 @@
       <span class="name-mal">അഭിഷേക് &amp; വർണ</span>
     </div>
 
-    <div class="cover-date-line">September 12 · 13 · 14, 2026</div>
-    <div class="cover-loc-line">◆ Velladikunnu · Guruvayur · Coimbatore ◆</div>
+    <div class="cover-date-line">September 13, 2026</div>
+    <div class="cover-loc-line">◆ Velladikunnu, Kerala ◆</div>
 
     <button class="cover-enter-btn" onclick="enterSite()">Open Invitation ✦</button>
   </div>
@@ -813,9 +808,9 @@
     <div class="nav-brand">Abhishek &amp; Varna</div>
     <ul class="nav-links">
       <li><a href="#countdown-section">Countdown</a></li>
-      <li><a href="#itinerary">Events</a></li>
+      <li><a href="#itinerary">Event</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#maps">Venues</a></li>
+      <li><a href="#maps">Venue</a></li>
       <li><a href="#rsvp">RSVP</a></li>
     </ul>
     <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -824,9 +819,9 @@
   </nav>
   <div class="nav-mobile-menu" id="mobileMenu">
     <a href="#countdown-section" onclick="closeMenu()">Countdown</a>
-    <a href="#itinerary" onclick="closeMenu()">Events</a>
+    <a href="#itinerary" onclick="closeMenu()">Event</a>
     <a href="#gallery" onclick="closeMenu()">Gallery</a>
-    <a href="#maps" onclick="closeMenu()">Venues</a>
+    <a href="#maps" onclick="closeMenu()">Venue</a>
     <a href="#rsvp" onclick="closeMenu()">RSVP</a>
   </div>
 
@@ -868,9 +863,9 @@
         <div class="ln l"></div><div class="dm"></div><div class="ln r"></div>
       </div>
       <div class="hero-date-block">
-        <span class="dl">The Wedding Celebration</span>
-        <span class="dm-main">Sep 12 · 13 · 14, 2026</span>
-        <span class="dl-loc">Velladikunnu · Guruvayur · Coimbatore</span>
+        <span class="dl">The Wedding Ceremony</span>
+        <span class="dm-main">Sep 13, 2026</span>
+        <span class="dl-loc">Velladikunnu, Kerala</span>
       </div>
     </div>
   </section>
@@ -902,7 +897,7 @@
       </div>
     </div>
     <p style="margin-top:1.8rem;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brown);font-size:0.95rem;">
-      until the Sangeet &nbsp;·&nbsp; September 12, 2026 · 6:00 PM
+      until the Wedding Ceremony &nbsp;·&nbsp; September 13, 2026 · 10:30 AM
     </p>
   </section>
 
@@ -954,56 +949,19 @@
   <section id="itinerary">
     <div class="itinerary-inner">
       <div class="itinerary-header">
-        <div class="section-tag">The Celebrations</div>
-        <h2 class="section-title">Wedding Events</h2>
-        <div class="section-title-mal">ആഘോഷ പരിപാടികൾ</div>
+        <div class="section-tag">The Celebration</div>
+        <h2 class="section-title">Wedding Event</h2>
+        <div class="section-title-mal">ആഘോഷ പരിപാടി</div>
       </div>
 
       <div class="events-timeline">
         <!-- Vertical line on left -->
         <div class="tl-line"></div>
 
-        <!-- ── SEP 12 ── -->
-        <div class="event-group">
-          <div class="event-date-header">
-            <div class="event-date-pill">Saturday · September 12, 2026</div>
-          </div>
-
-          <div class="ev-row reveal">
-            <div class="ev-dot"><div class="ev-dot-inner">🎵</div></div>
-            <div class="ev-card">
-              <div class="ev-name">Sangeet</div>
-              <div class="ev-name-mal">സംഗീത്</div>
-              <div class="ev-meta">
-                <div class="ev-meta-item"><span class="ev-icon">🕕</span><span>6:00 PM onwards</span></div>
-                <div class="ev-meta-item"><span class="ev-icon">📍</span>
-                  <span>Rajaprastham Convention Centre<br/>Velladikunnu, Kerala</span>
-                </div>
-              </div>
-              <a href="https://maps.app.goo.gl/arVwu261FZ2Pcyfk6" target="_blank" class="ev-map-link">View on Maps ↗</a>
-            </div>
-          </div>
-        </div>
-
         <!-- ── SEP 13 ── -->
         <div class="event-group">
           <div class="event-date-header">
             <div class="event-date-pill">Sunday · September 13, 2026</div>
-          </div>
-
-          <div class="ev-row reveal">
-            <div class="ev-dot"><div class="ev-dot-inner">🛕</div></div>
-            <div class="ev-card">
-              <div class="ev-name">Thaali Kettu</div>
-              <div class="ev-name-mal">താലി കെട്ട്</div>
-              <div class="ev-meta">
-                <div class="ev-meta-item"><span class="ev-icon">🕗</span><span>7:30 AM</span></div>
-                <div class="ev-meta-item"><span class="ev-icon">📍</span>
-                  <span>Sree Krishna Temple<br/>Guruvayur, Kerala</span>
-                </div>
-              </div>
-              <a href="https://maps.app.goo.gl/pH9ZvDLFVMNAdmjk9" target="_blank" class="ev-map-link">View on Maps ↗</a>
-            </div>
           </div>
 
           <div class="ev-row reveal">
@@ -1018,28 +976,6 @@
                 </div>
               </div>
               <a href="https://maps.app.goo.gl/arVwu261FZ2Pcyfk6" target="_blank" class="ev-map-link">View on Maps ↗</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── SEP 14 ── -->
-        <div class="event-group">
-          <div class="event-date-header">
-            <div class="event-date-pill">Monday · September 14, 2026</div>
-          </div>
-
-          <div class="ev-row reveal">
-            <div class="ev-dot"><div class="ev-dot-inner">🌸</div></div>
-            <div class="ev-card">
-              <div class="ev-name">Wedding Reception</div>
-              <div class="ev-name-mal">വിവാഹ സ്വീകരണം</div>
-              <div class="ev-meta">
-                <div class="ev-meta-item"><span class="ev-icon">🌟</span><span>6:30 PM onwards</span></div>
-                <div class="ev-meta-item"><span class="ev-icon">📍</span>
-                  <span>Aadrika Hall<br/>Sree Annapoorna Hotel<br/>Coimbatore, Tamil Nadu</span>
-                </div>
-              </div>
-              <a href="https://maps.app.goo.gl/drZig1CLn1ATzx5G6" target="_blank" class="ev-map-link">View on Maps ↗</a>
             </div>
           </div>
         </div>
@@ -1086,14 +1022,14 @@
   <section id="maps">
     <div class="maps-header">
       <div class="section-tag">Find Your Way</div>
-      <h2 class="section-title">Venue Locations</h2>
+      <h2 class="section-title">Venue Location</h2>
       <div class="section-title-mal">സ്ഥലത്തിന്റെ വഴി</div>
     </div>
     <div class="maps-grid">
       <div class="map-card">
         <div class="map-card-header">
           <h3>Rajaprastham Convention Centre</h3>
-          <p>Sangeet &amp; Wedding Ceremony · Velladikunnu, Guruvayur</p>
+          <p>Wedding Ceremony · Velladikunnu, Guruvayur</p>
         </div>
         <iframe
           class="map-frame"
@@ -1103,22 +1039,6 @@
         <div class="map-card-footer">
           <div class="map-address">Rajaprastham Convention Centre,<br/>Velladikunnu, Kerala</div>
           <a href="https://maps.app.goo.gl/arVwu261FZ2Pcyfk6" target="_blank" class="map-btn">Open Maps ↗</a>
-        </div>
-      </div>
-
-      <div class="map-card">
-        <div class="map-card-header">
-          <h3>Aadrika Hall · Sree Annapoorna Hotel</h3>
-          <p>Wedding Reception · Coimbatore, Tamil Nadu</p>
-        </div>
-        <iframe
-          class="map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6465639742387!2d76.94004907458877!3d11.065102989101721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7000434c7b3%3A0x9aea9bf347ba6db1!2sAadrika%20hall%2C%20Annapoorna!5e0!3m2!1sen!2sus!4v1782612733016!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="map-card-footer">
-          <div class="map-address">Aadrika Hall, Sree Annapoorna Hotel,<br/>Coimbatore, Tamil Nadu</div>
-          <a href="https://maps.app.goo.gl/drZig1CLn1ATzx5G6" target="_blank" class="map-btn">Open Maps ↗</a>
         </div>
       </div>
     </div>
@@ -1158,19 +1078,10 @@
           </select>
         </div>
         <div class="form-row">
-          <label style="margin-bottom:0.7rem;">Attending which events?</label>
+          <label style="margin-bottom:0.7rem;">Attending the event?</label>
           <div class="events-checkboxes">
             <label class="event-check-item">
-              <input type="checkbox" id="ev-sangeet"/> <span>Sangeet (Sep 12)</span>
-            </label>
-            <label class="event-check-item">
-              <input type="checkbox" id="ev-thaali"/> <span>Thaali Kettu (Sep 13)</span>
-            </label>
-            <label class="event-check-item">
-              <input type="checkbox" id="ev-wedding"/> <span>Wedding (Sep 13)</span>
-            </label>
-            <label class="event-check-item">
-              <input type="checkbox" id="ev-reception"/> <span>Reception (Sep 14)</span>
+              <input type="checkbox" id="ev-wedding"/> <span>Wedding Ceremony (Sep 13)</span>
             </label>
           </div>
         </div>
@@ -1207,7 +1118,7 @@
     <div class="footer-tagline-mal">രണ്ട് മനസ്സ്, ഒരു സ്നേഹം, ശാശ്വത സന്തോഷം</div>
     <div class="footer-divider"></div>
     <div style="font-size:1.4rem;color:var(--gold);margin-bottom:0.8rem;opacity:0.55;">ॐ</div>
-    <div class="footer-copy">September 12 · 13 · 14, 2026 &nbsp;·&nbsp; Velladikunnu · Guruvayur · Coimbatore</div>
+    <div class="footer-copy">September 13, 2026 &nbsp;·&nbsp; Velladikunnu, Kerala</div>
   </footer>
 
 </div><!-- /main-site -->
@@ -1233,8 +1144,8 @@
   }
 
   function tick() {
-    // Target: Sep 12 2026 18:00 IST (UTC+5:30)
-    const target = new Date('2026-09-12T12:30:00Z'); // 18:00 IST = 12:30 UTC
+    // Target: Sep 13 2026 10:30 IST (UTC+5:30)
+    const target = new Date('2026-09-13T05:00:00Z'); // 10:30 IST = 05:00 UTC
     const now    = new Date();
     let diff = target - now;
 
@@ -1289,10 +1200,7 @@
     const message = document.getElementById('rsvp-message').value.trim();
   
     const events = [];
-    if (document.getElementById('ev-sangeet').checked) events.push('Sangeet (Sep 12)');
-    if (document.getElementById('ev-thaali').checked) events.push('Thaali Kettu (Sep 13)');
-    if (document.getElementById('ev-wedding').checked) events.push('Wedding (Sep 13)');
-    if (document.getElementById('ev-reception').checked) events.push('Reception (Sep 14)');
+    if (document.getElementById('ev-wedding').checked) events.push('Wedding Ceremony (Sep 13)');
   
     if (!name) {
       alert('Please enter your name.');
@@ -1312,7 +1220,7 @@
       }
     
       if (events.length === 0) {
-        alert('Please select at least one event you are attending.');
+        alert('Please select the event you are attending.');
         return;
       }
     
